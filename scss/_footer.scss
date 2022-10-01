@@ -1,0 +1,244 @@
+footer {
+    
+    padding: 10rem 0;
+    background: $gray-brand-100;
+    .wrapper{
+        .top{
+            @include flex(row, center, space-between);
+            margin-bottom: 8.7rem;
+            .text-footer{
+                h2{
+                    margin-bottom: 0.8rem;
+                }
+                span{
+                    font-weight: 500;
+                    font-size: 2.8rem;
+                    line-height: 130%;
+                    color: $gray-brand;
+                }
+            }
+            .button{
+                display: inline-block;
+                border-radius: 12rem;
+                border: 1px solid #C4C4C4;
+                padding: 8px 11px 8px 11px;
+                button{
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    font-family: 'Montserrat', sans-serif;
+                    padding: 18px 85px;
+                    border-radius: 120px;
+                    transition: all .3s;
+                    background: #f6f6f6;
+                    color: $gray-brand;
+                    &:not(:last-child){
+                        margin-right: 64px;
+                    }
+                    &.active{
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        display: inline-block;
+                        padding: 18px 85px;
+                        border-radius: 120px;
+                        background-color: black;
+                        color: $white-color;
+                        transition: all .3s;
+                        
+                    }
+                }
+                
+            }
+        }
+        .mokup{
+            display: flex;
+            justify-content: space-around;
+            height: 42.4rem;
+            border-radius: 1.2rem;
+            padding: 0px 136px 0px 100px;
+            background: linear-gradient(98.6deg, #020302 7.61%, #242424 96.26%);
+            position: relative;
+            .txt{
+                width: 100%;
+                max-width: 34.1rem;
+                padding-top: 9.7rem;
+                h2{
+                    font-weight: 600;
+                    font-size: 2.4rem;
+                    line-height: 130%;
+                    letter-spacing: -0.03em;
+                    color: $white-color;
+                    margin-bottom: 1.6rem;
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 150%;
+                   color: rgba(255, 255, 255, 0.7);
+                   
+                }
+                .sound{
+                    @include flex(row, center, flex-start);
+                    margin-top: 4.4rem;
+                    gap: 1.6rem;
+                    .icon{
+                            border-radius: 50%;
+                            background: white;
+                            width: 32px;
+                            height: 32px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                    }
+                    p{
+                        font-size: 1.4rem;
+                        color: #fafafa;
+                        
+                    }
+                }
+            }
+            .ilustra-mokup{
+                display: flex;
+                width: 100%;
+                max-width: 51.9rem;
+               
+
+                
+                .card-bank{
+                    position: absolute;
+                    width: 100%;
+                    bottom: 108px;
+                    z-index: 20;
+                    animation: floating 6s infinite;
+                    
+                    
+                }
+                .mokup-cel{
+                    position: absolute;
+                    width: 100%;
+                    top: 73px;
+                   
+                    }
+                }
+            }
+            .logo{
+                img{
+                    position: absolute;
+                    right: 72px;
+                    bottom: 53px;
+                }
+            }
+        }
+        @include responsivo(1100px){
+            padding: 6.4rem 0;
+            .wrapper{
+                .top{
+                    flex-direction: column;
+                    .text-footer{
+                        text-align: center;
+                        margin-bottom: 4rem;
+                    }
+                }
+                .logo{
+                    img{
+                        right: 3.5rem;
+                        bottom: 3.1rem;
+                    }
+                }
+                
+            }
+        }
+        @include responsivo(991px){
+            padding: 6.4rem 0;
+            .wrapper{
+                width: 92%;
+                .top{
+                    padding: 0;
+                    flex-direction: column;
+                    .text-footer{
+                        
+                        h2{
+                            font-size: 32px;
+                        }
+                        span{
+                            font-size: 24px;
+                        }
+                    }
+                    .button{
+                        .js-btn{
+                            font-size: 1.2rem;
+                            padding: 1.5rem 1rem;
+                            &:not(:last-child){
+                                margin-right: 20px;
+                            }
+                            &.active{
+                                font-size: 1.2rem;
+                                padding: 1.5rem 2.8rem;
+                            }
+                        }
+                    }
+                }
+                .mokup{
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    padding: 6.4rem 1.8rem 0 1.8rem;
+                    height: 63.2rem;
+                    .txt{
+                        text-align: center;
+                        padding: 0;
+                        max-width: 100%;
+                        h2{
+                            font-size: 2.2rem;
+                        }
+                        .sound{
+                            margin-top: 4rem;
+                            justify-content: center;
+                        }
+                    }
+                    .ilustra-mokup{
+                        height: 45rem;
+                        margin: 0 auto;
+                        position: relative;
+                        .card-bank{
+                            right: 28px;
+                            bottom: 74px;
+                        }
+                        .mokup-cel{
+                            top: 117px;
+                        }
+                    }
+                }
+                .logo{
+                    img{
+
+                        right: 1.3rem;
+                        width: 8rem;
+                        bottom: 23px;
+                    }
+                }
+            }
+        }
+        @include responsivo(600px){
+            .wrapper{
+                .mokup{
+                    
+                    .ilustra-mokup{
+                        position: static;
+                        .mokup-cel{
+                           width: 100%;
+                           max-width: 50rem;
+                           position: static;
+                           img{
+                            position: absolute;
+                            bottom: 0;
+                            right: 9px;
+                           }
+                        
+
+                        }
+                    }
+                }
+            }
+        }
+    }

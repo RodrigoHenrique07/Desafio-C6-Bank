@@ -1,0 +1,39 @@
+.btn-primery {
+    display: inline-block;
+    padding: 1.1rem 5rem;
+    border-radius: 10rem;
+    background-color: $yellow-brand;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .3s;
+    
+    &:hover{
+        background-color: $gray-brand-100;
+       
+        
+    }
+    @include responsivo(900px){
+        padding: 1rem 3rem;
+    }
+    @include responsivo(480px){
+        padding: 1.1rem 1.4rem;
+    }
+}
+
+.btn-second {
+    display: inline-block;
+    padding: 1.5rem 4rem;
+    border-radius: 10rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    border: 1px solid #ffff;
+    color: $white-color;
+    font-family: 'Montserrat', sans-serif;
+    background: transparent;
+    letter-spacing: 0.02em
+}
