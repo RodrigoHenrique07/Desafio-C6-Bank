@@ -34,7 +34,7 @@ Montado a estrutura e feito a estilização, foi aplicado algumas funcionalidade
 
 
 <p>Esse foi o resultado:</p>
-<a>https://lnkd.in/dmRRijsH</a>
+<a>desafio-c6-bank.vercel.app</a>
 
 ## Aprendizado 
 
